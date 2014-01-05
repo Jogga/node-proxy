@@ -1,0 +1,16 @@
+node_modules
+
+logs
+pids
+results
+build
+
+lib-conv
+*.seed
+*.log
+*.csv
+*.dat
+*.dat
+*.out
+*.pid
+*.gz
