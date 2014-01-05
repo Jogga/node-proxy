@@ -2,9 +2,11 @@ var http = require('http');
 var httpProxy = require('http-proxy');
 
 
+
+// Proxy Server
 httpProxy.createServer(function (req, res, proxy) {    
 
-    // Host Variable
+    // Set Host Variable
     var host = req.headers.host;
     
     // Port Router 
