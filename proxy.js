@@ -35,14 +35,3 @@ httpProxy.createServer(function (req, res, proxy) {
         port: port
     });
 }).listen(80);
-
-
-
-// Testserver, please ignore
-
-http.createServer(function (req, res) {
-    res.writeHead( 200, {"Content-Type": "text/plain"});
-    res.write('Echo service: \nUrl: ' + req.url);
-    res.write('\nHeaders:\n' + JSON.stringify(req.headers, true, 2));
-    res.end();
-}).listen(8000);
