@@ -1,7 +1,20 @@
 var http = require('http');
 var httpProxy = require('http-proxy');
 
+var options = {
+    router: {
+        'ambition.me': '127.0.0.1:8000',
+        'jogga.org': '127.0.0.1:9000'
+    }
+};
 
+var proxyServer = httpProxy.createServer(
+    require('connect-no-www')(false), options);
+
+proxyServer.listen(80);
+
+
+/*
 
 // Proxy Server
 httpProxy.createServer(function (req, res, proxy) {    
@@ -35,3 +48,8 @@ httpProxy.createServer(function (req, res, proxy) {
         port: port
     });
 }).listen(80);
+
+*/
+
+
+
