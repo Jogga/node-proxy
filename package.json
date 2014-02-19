@@ -1,11 +1,11 @@
 {
-	"name": "http-server",
+	"name": "node proxy",
 	"version": "0.0.1",
 	"author": "Jogga <joachim@froestl.com>",
 	"description": "a simple proxy to route traffic to node apps or apache",
 	"repository": {
     	"type": "git",
-    	"url": "https://github.com/nodejitsu/http-server.git"
+    	"url": "https://github.com/Jogga/node-proxy.git"
 	},
 	"dependencies" : {
 		"http-proxy": "0.10.4",
