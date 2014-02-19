@@ -3,8 +3,15 @@ var httpProxy = require('http-proxy');
 
 var options = {
     router: {
+
+        // Node Apps
         'ambition.me': '127.0.0.1:8000',
-        'jogga.org': '127.0.0.1:9000'
+        'heyjo.net': '127.0.0.1:8001',
+		'questjs.org': '127.0.0.1:8002',
+
+        // Apache Sites
+        'relaunch.stefankober.com': '127.0.0.1:9000',
+        'jogga.org': '127.0.0.1:9000',
     }
 };
 
