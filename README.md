@@ -1,5 +1,4 @@
 # node-proxy
-==========
 
 Proxy, routes request to the appropriate server.
 
